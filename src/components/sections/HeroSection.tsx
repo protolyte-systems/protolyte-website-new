@@ -1,4 +1,5 @@
 import { useEffect, useRef, type JSX } from "react";
+import { useNavigate } from "react-router-dom";
 import type { HeroContent } from "../../types/home";
 import PrimaryButton from "../common/PrimaryButton";
 import styles from "./HeroSection.module.css";
@@ -9,6 +10,7 @@ interface HeroSectionProps {
 
 function HeroSection({ content }: HeroSectionProps): JSX.Element {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -150,7 +152,7 @@ function HeroSection({ content }: HeroSectionProps): JSX.Element {
           <p className={styles.description}>{content.description}</p>
 
           <div className={styles.actions}>
-            <PrimaryButton>{content.primaryAction}</PrimaryButton>
+            <PrimaryButton onClick={() => navigate("/products/martlyte")}>{content.primaryAction}</PrimaryButton>
           </div>
         </div>
 

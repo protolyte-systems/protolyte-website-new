@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { Link } from "react-router-dom";
 import type { Offering } from "../../types/home";
 import SectionHeader from "../common/SectionHeader";
 import styles from "./OfferingsSection.module.css";
@@ -27,9 +28,9 @@ function OfferingsSection({ items }: OfferingsSectionProps): JSX.Element {
               </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <a href={item.href} className={styles.more}>
+              <Link to={item.href} className={styles.more}>
                 Learn more <span className="material-symbols-outlined">arrow_forward</span>
-              </a>
+              </Link>
             </article>
           ))}
         </div>

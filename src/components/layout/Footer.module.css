@@ -150,3 +150,6 @@
     grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
   }
 }
+
+.productLink { display: inline-flex; align-items: center; gap: .45rem; color: #ffffff; background: var(--color-primary); border-radius: .6rem; padding: .7rem .9rem; text-decoration: none; font-size: .85rem; font-weight: 700; }
+.productLink:hover { background: #180ad4; }

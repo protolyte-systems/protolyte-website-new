@@ -27,3 +27,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+
+html { scroll-behavior: smooth; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #818cf8; outline-offset: 3px; }

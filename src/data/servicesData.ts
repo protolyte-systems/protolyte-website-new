@@ -9,7 +9,7 @@ import type {
 export const servicesNavItems: ServicesNavItem[] = [
   { label: "Home", href: "/home" },
   { label: "Services", href: "/services" },
-  { label: "Solutions", href: "/solutions" },
+  { label: "Products", href: "/products" },
   { label: "Case Studies", href: "/casestudies" },
   { label: "About", href: "/about" },
 ];
@@ -30,42 +30,42 @@ export const serviceCards: ServiceCard[] = [
     title: "AI & Machine Learning",
     description:
       "Custom neural networks and predictive modeling for business intelligence. We build autonomous agents and LLM-powered workflows tailored to your data.",
-    href: "#",
+    href: "/services",
   },
   {
     icon: "hub",
     title: "Strategic Consulting",
     description:
       "Strategic roadmap planning for modernizing legacy business processes. We align your tech stack with long-term growth objectives and market shifts.",
-    href: "#",
+    href: "/services",
   },
   {
     icon: "developer_board",
     title: "Platform Engineering",
     description:
       "Scalable architecture design for high-performance enterprise applications. Microservices, event-driven systems, and robust API ecosystems.",
-    href: "#",
+    href: "/services",
   },
   {
     icon: "cloud_sync",
     title: "Cloud Migration",
     description:
       "Seamless transition of infrastructure to secure, scalable cloud environments. Multicloud strategies and serverless optimization.",
-    href: "#",
+    href: "/services",
   },
   {
     icon: "query_stats",
     title: "Data & Analytics",
     description:
       "Advanced data processing and visualization for actionable insights. Real-time dashboards and automated reporting for decision makers.",
-    href: "#",
+    href: "/services",
   },
   {
     icon: "robot_2",
     title: "Intelligent Automation",
     description:
       "Streamlining operations with intelligent RPA and workflow orchestration. Reduce manual overhead and eliminate operational bottlenecks.",
-    href: "#",
+    href: "/services",
   },
 ];
 
@@ -94,21 +94,20 @@ export const whyImage = {
 
 export const servicesFooterGroups: ServicesFooterGroup[] = [
   {
-    title: "Solutions",
+    title: "Products",
     links: [
-      { label: "AI & ML", href: "#" },
-      { label: "Platform Engineering", href: "#" },
-      { label: "Cloud Strategy", href: "#" },
-      { label: "Automation", href: "#" },
+      { label: "AI & ML", href: "/services" },
+      { label: "Platform Engineering", href: "/services" },
+      { label: "Cloud Strategy", href: "/services" },
+      { label: "Automation", href: "/services" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Partners", href: "#" },
-      { label: "Contact", href: "#" },
-    ],
+      { label: "About Us", href: "/about" },
+      { label: "Careers", href: "/careers" },
+      { label: "Case Studies", href: "/casestudies" },
+        ],
   },
 ];

@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { useNavigate } from "react-router-dom";
 import type { ServiceHeroContent } from "../../../types/services";
 import PrimaryButton from "../../common/PrimaryButton";
 import styles from "./ServicesHeroSection.module.css";
@@ -8,6 +9,7 @@ interface ServicesHeroSectionProps {
 }
 
 function ServicesHeroSection({ content }: ServicesHeroSectionProps): JSX.Element {
+  const navigate = useNavigate();
   return (
     <section className={styles.section}>
       <div className={styles.gradient} />
@@ -26,7 +28,7 @@ function ServicesHeroSection({ content }: ServicesHeroSectionProps): JSX.Element
         <div className={styles.actions}>
       
 
-            <PrimaryButton>{content.primaryAction}</PrimaryButton>
+            <PrimaryButton onClick={() => navigate("/casestudies")}>{content.primaryAction}</PrimaryButton>
         
         </div>
       </div>

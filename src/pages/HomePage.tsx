@@ -1,6 +1,5 @@
 import Navbar from "../components/layout/Navbar";
 import HeroSection from "../components/sections/HeroSection";
-import LogoWallSection from "../components/sections/LogoWallSection";
 import OfferingsSection from "../components/sections/OfferingsSection";
 import ClientValueSection from "../components/sections/ClientValueSection";
 import CaseStudiesSection from "../components/sections/CaseStudiesSection";
@@ -13,7 +12,6 @@ import {
   heroContent,
   navItems,
   offerings,
-  trustedBrands,
 } from "../data/homeData";
 import styles from "./HomePage.module.css";
 import type { JSX } from "react";

@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { Link } from "react-router-dom";
 import type { ServiceCard } from "../../../types/services";
 import styles from "./ServicesGridSection.module.css";
 
@@ -18,9 +19,9 @@ function ServicesGridSection({ items }: ServicesGridSectionProps): JSX.Element {
               </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <a href={item.href}>
+              <Link to={item.href}>
                 Learn More <span className="material-symbols-outlined">arrow_forward</span>
-              </a>
+              </Link>
             </article>
           ))}
         </div>
